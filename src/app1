@@ -1,0 +1,54 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+
+
+class App extends Component {
+  constructor()
+  {
+   super();
+    this.state={
+      homeLink:"Home"
+    };
+  }
+  onGreat()
+  {
+    alert("Hello this is ramu");
+  }
+  onChangeLinkName(newName)
+  {
+    this.setState({
+      homeLink:newName
+    });
+  }
+  render() {
+  
+  
+    return (
+      
+      <div class="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <Header homeLink={ this.state.homeLink}/>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <Home name={"laxman"}
+               age={26}
+               great={ this.onGreat }
+               changeLink={ this.onChangeLinkName.bind(this)}
+               intilaLinkName={ this.state.homeLink}
+               />
+              
+            </div>
+          </div>
+      </div>
+ 
+    )
+  }
+}
+
+export default App;
