@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-
+import React, { Component }         from 'react';
+/**
+ * This class used for Creating cart row
+ */
 export default function CartColumn() {
     
         return  <div className="container-fluid text-center d-none d-lg-block">

@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * This function used for display cart items
+ * @param { products items} item 
+ * @param { products values} value 
+ */
 
 export default function CartItem(item,value){
     const {id,title,img,price,total,count}=item.item;
@@ -40,7 +45,7 @@ export default function CartItem(item,value){
                </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-            <strong>Item Total : ${total}</strong>
+            <strong>Item Total : &#8377; {total}</strong>
             </div>
             
         </div>

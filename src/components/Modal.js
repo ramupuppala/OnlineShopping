@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
-import {ProductConsumer} from '../context';
-import  {ButtonContainer} from './Button';
-import {Link} from 'react-router-dom';
-import styled from 'styled-components';
+import React, { Component }             from 'react';
+import {ProductConsumer}                from '../context';
+import  {ButtonContainer}               from './Button';
+import {Link}                           from 'react-router-dom';
+import styled                           from 'styled-components';
+
+/**
+ * This class used for display modal of cart.
+ */
 
 class Modal extends Component {
     constructor(props) {
@@ -27,7 +31,7 @@ class Modal extends Component {
                                          <h5>item added to the cart</h5>
                                          <img src={img} className="img-fluid" alt="product"/>
                                          <h5>{title}</h5>
-                                         <h5 className="text-muted">price : $ {price}</h5>
+                                         <h5 className="text-muted">price : &#8377; {price}</h5>
                                          <Link to="/">
                                             <ButtonContainer onClick={()=>{closeModal()}}>
                                                 store

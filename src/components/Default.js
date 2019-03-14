@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component }         from 'react';
+/**
+ * This class used for if routing is not find displaying 404 error.
+ */
 class Default extends Component {
     constructor(props) {
         super(props);

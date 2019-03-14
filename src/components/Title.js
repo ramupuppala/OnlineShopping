@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * This function used for title of product list.
+ */
 export default function Title({name,title})
 {
     return (

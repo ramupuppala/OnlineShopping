@@ -3,6 +3,10 @@ import Title from './Title';
 import Product from './Product';
 import {ProductConsumer} from '../context';
 
+/**
+ * This class used for display product list.
+ */
+
 class ProductList extends Component {
     constructor(props) {
         super(props);

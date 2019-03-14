@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
-import { ProductConsumer } from '../context';
-import { Link } from 'react-router-dom';
-import { ButtonContainer } from './Button';
+import React, { Component }             from 'react';
+import { ProductConsumer }              from '../context';
+import { Link }                         from 'react-router-dom';
+import { ButtonContainer }              from './Button';
+
+/**
+ * This class used for displaying details of products.
+ */
+
 class Details extends Component {
     constructor(props) {
         super(props);
@@ -31,7 +36,7 @@ class Details extends Component {
                                         <h2>Model:{title}</h2>
                                         <h4 className="text-title text-uppercase text-muted mt-3 mb-2">made by:<span className="text-uppercase">{company}</span></h4>
                                         <h4 className="text-blue">
-                                            <strong>Price:<span>$</span>{price}</strong>
+                                            <strong>Price:<span>&#8377;</span>{price}</strong>
                                         </h4>
                                         <p className="text-capitalize font-weight-bold mt-3 mb-0">
                                             some info about product: 

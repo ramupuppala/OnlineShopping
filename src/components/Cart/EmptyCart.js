@@ -1,4 +1,7 @@
-import React from 'react';
+import React        from 'react';
+/**
+ * This function used for display Empty cart
+ */
  export default function EmtptyCart()
  {
     return <div className="container mt-5">

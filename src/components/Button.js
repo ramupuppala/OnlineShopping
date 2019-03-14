@@ -1,5 +1,8 @@
-import styled from 'styled-components';
+import styled       from 'styled-components';
 
+/**
+ * This const used for displaying button.
+ */
 export const ButtonContainer= styled.button`
 text-transform:capitalize;
 cursor:pointer;

@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import Title from '../Title';
-import CartColumn from './CartColumn';
-import EmptyCart from './EmptyCart';
-import {ProductConsumer} from '../../context';
-import CartList from './CartList';
-import CartTotals from './CartTotal';
-
+import React, { Component }         from 'react';
+import Title                        from '../Title';
+import CartColumn                   from './CartColumn';
+import EmptyCart                    from './EmptyCart';
+import {ProductConsumer}            from '../../context';
+import CartList                     from './CartList';
+import CartTotals                   from './CartTotal';
+/*
+** This class using for Add to cart items
+*/
 class Cart extends Component {
     constructor(props) {
         super(props);
@@ -24,7 +26,7 @@ class Cart extends Component {
                                 <center><Title name="your" title="cart"/></center>  
                                 <CartColumn/>
                                  <CartList value={value}/>
-                                 <CartTotals value={value}/>
+                                 <CartTotals value={value} history={this.props.history}/>
                             </React.Fragment>                           
                         )
                        }

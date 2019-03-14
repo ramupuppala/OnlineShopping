@@ -1,4 +1,6 @@
-
+/**
+ * Product list and details of product list.
+ */
 export const storeProducts = [
     {
       id: 1,

@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import logo from '../images/download.svg';
-import styled from 'styled-components';
-import {ButtonContainer} from './Button';
+import React, { Component }         from 'react';
+import {Link}                       from 'react-router-dom';
+import logo                         from '../images/download.svg';
+import styled                       from 'styled-components';
+import {ButtonContainer}            from './Button';
 
+/**
+ * This class used for display navbar.
+ */
 
 class Navbar extends Component {
     constructor(props) {
@@ -18,7 +21,7 @@ class Navbar extends Component {
                 </Link>
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item ml-5" >
-                    <Link to="products">
+                    <Link to="">
                    <div style={{fontWeight:900}}>
                    Products  </div> 
                     </Link>

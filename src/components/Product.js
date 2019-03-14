@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { ProductConsumer } from '../context';
-import PropTypes from 'prop-types';
+import React, { Component }             from 'react';
+import styled                           from 'styled-components';
+import { Link }                         from 'react-router-dom';
+import { ProductConsumer }              from '../context';
+import PropTypes                        from 'prop-types';
+
+/**
+ * This class used for display product list.
+ */
 
 class Product extends Component {
     constructor(props) {
@@ -34,7 +38,7 @@ class Product extends Component {
                             {title}
                         </p>
                         <h5 className="text-blue font-italic mb-0">
-                            <span className="mr-1">$</span>{price}
+                            <span className="mr-1">&#8377;</span>{price}
                         </h5>
                     </div>
                 </div>
